@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible"
+    tools:context="controller.Clients"
+    tools:visibility="visible">
+
+    <include
+        android:id="@+id/toolbar_client"
+        layout="@layout/toolbar" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerlayout_clients"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:headerLayout="@layout/header_nav"
+            app:menu="@menu/main_menu"
+            android:layout_gravity="start"
+            android:id="@+id/navigation_view"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/orangeclair">
+            <ListView
+                android:id="@+id/list_clients"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:clipToPadding="false"
+                tools:listitem="@layout/list_items"
+                tools:ignore="MissingClass"
+                android:dividerHeight="2.0dp"
+                />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/ajouterClient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:backgroundTint="@color/blanc"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="59dp"
+                android:clickable="true"
+                app:fabSize="auto"
+                app:srcCompat="@drawable/ic_baseline_add_24" />
+
+
+        </RelativeLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

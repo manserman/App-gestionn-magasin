@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <item android:icon="@drawable/look_foreground"
+        app:showAsAction="always"
+        android:id="@+id/recherche"
+        android:enabled="true"
+        android:title="Recherecher"
+        app:actionViewClass="android.widget.SearchView"/>
+    <item
+        app:showAsAction="never"
+        android:id="@+id/Trier"
+        android:enabled="true"
+        android:title="Trier"
+        >
+        <menu>
+
+            <item
+                app:showAsAction="never"
+                android:id="@+id/tri_d"
+                android:enabled="true"
+                android:title="par ID"
+                >
+                <menu  >
+                    <group android:checkableBehavior="single">
+                        <item android:title="Croissant"
+                            android:id="@+id/tri_id_croissant"
+                            />
+                        <item android:title="Décroissant"
+                            android:id="@+id/tri_id_decroissant"
+                            />
+                    </group>
+                </menu>
+            </item>
+            <item
+                android:enabled="true"
+                android:title="Prix"
+                app:showAsAction="never">
+                <menu>
+                    <group android:checkableBehavior="single">
+                        <item
+                            android:id="@+id/tri_prix_croissant"
+                            android:title="Croissant" />
+                        <item
+                            android:id="@+id/tri_prix_decroissant"
+                            android:title="Décroissant" />
+                    </group>
+                </menu>
+            </item>
+            <item
+                app:showAsAction="never"
+                android:enabled="true"
+                android:title="par date"
+                >
+                <menu  >
+                    <group android:checkableBehavior="single">
+                        <item android:title="Croissant"
+                            android:id="@+id/tri_date_croissant"
+                            />
+                        <item android:title="Décroissant"
+                            android:id="@+id/tri_date_decroissant"
+                            />
+                    </group>
+                </menu>
+            </item>
+
+
+
+        </menu>
+
+    </item>
+
+</menu>

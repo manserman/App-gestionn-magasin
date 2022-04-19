@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+        android:actionMenuTextColor="@color/blanc"
+    >
+    <group>
+
+        android:actionMenuTextColor="@color/blanc"
+        android:checkableBehavior="single"
+        <item
+            android:id="@+id/mon_compte_menu"
+            android:textColor="@color/blanc"
+            android:textSize="18sp"
+            android:title="Mon compte"
+            android:icon="@mipmap/gerer_moncompte_foreground"/>
+        <item
+            android:id="@+id/produits_menu"
+            android:textColor="@color/blanc"
+            android:textSize="18sp"
+            android:title="Produits"
+            android:icon="@drawable/produit_foreground"/>
+
+        <item
+            android:id="@+id/clients_menu"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:title="Clients"
+            android:icon="@mipmap/clients_foreground"/>
+
+        <item
+            android:id="@+id/fournisseurs_menu"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:title="Fournisseurs"
+            android:icon="@mipmap/provider_foreground"/>
+
+        <item
+            android:id="@+id/utilisateurs_menu"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:title="Utilisateurs"
+            android:icon="@mipmap/users_foreground"/>
+
+        <item
+            android:id="@+id/commandes_menu"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:title="Commandes"
+            android:icon="@mipmap/orders_foreground"/>
+
+        <item
+            android:id="@+id/factures_menu"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:title="Factures"
+            android:icon="@mipmap/invoice_foreground"/>
+    </group>
+    <item
+        android:id="@+id/deconnexion_header"
+        android:icon="@mipmap/logout_foreground"
+        android:textSize="18sp"
+        android:title="Deconnexion" />
+    
+
+</menu>

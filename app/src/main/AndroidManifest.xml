@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tentative">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <application
+        android:name="controller.Gestion"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_foreground"
+        android:roundIcon="@mipmap/logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <receiver
+            android:name="controller.MyDateReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter >
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="controller.Ajout_factures" />
+        <activity android:name="controller.Splash">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN"
+                    android:screenOrientation="portrait" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="controller.Ajout_commande"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="controller.Ajouter_Admin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="controller.Modifier_infos_admin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="controller.Factures"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="controller.Mon_Compte"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="controller.Ajout_fournisseur"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="controller.Ajout_client"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="controller.Administrateurs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="controller.Commandes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="controller.Fournisseurs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="controller.Clients"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="controller.Ajout_produit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="controller.Produits"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="controller.Principale"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name="controller.MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/valable"
+        android:title="Valable"
+        android:icon="@drawable/valid_foreground"
+        />
+    <item android:id="@+id/perime"
+        android:title="Périmé"
+        android:icon="@drawable/peremption_foreground"
+        />
+
+</menu>

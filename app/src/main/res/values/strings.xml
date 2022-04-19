@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="app_name">Mon Stock</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="name">Name</string>
+    <string name="se_connecter">Se connecter</string>
+    <string name="quitter">Quitter</string>
+    <string name="nom_d_utilisateur">Nom d\'utilisateur</string>
+    <string name="title_activity_principal">Principal</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="mon_compte">Mon compte</string>
+    <string name="todo">TODO</string>
+    <string name="annuler">Annuler</string>
+    <string name="effectuer">Effectuer</string>
+</resources>

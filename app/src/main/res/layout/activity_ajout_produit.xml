@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="controller.Ajout_produit">
+
+    <include
+        android:id="@+id/toolbar_ajoutprod"
+        layout="@layout/toolbar" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerlayout_ajout_prod"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:headerLayout="@layout/header_nav"
+            app:menu="@menu/main_menu"
+            android:layout_gravity="start"
+            android:id="@+id/navigation_view"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp"
+            android:background="@color/orangeclair">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                app:hintTextColor="@color/blanc">
+
+                <com.aldoapps.autoformatedittext.AutoFormatEditText
+                    android:inputType="number"
+                    android:id="@+id/lot"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Numéro de lot"
+                    android:textColor="@color/blanc"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                app:hintTextColor="@color/blanc">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/label"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Libellé"
+                    android:textColor="@color/blanc"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                app:hintTextColor="@color/blanc">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/categorie_produit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Catégorie"
+                    android:textColor="@color/blanc"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                app:hintTextColor="@color/blanc">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/dateachat_produit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Date d'achat:AAAA-MM-JJ"
+                    android:textColor="@color/blanc"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                app:hintTextColor="@color/blanc">
+
+                <com.aldoapps.autoformatedittext.AutoFormatEditText
+                    android:id="@+id/prix_achat_produit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Prix d'achat"
+                    android:inputType="number"
+                    android:textColor="@color/blanc"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                app:hintTextColor="@color/blanc">
+
+                <com.aldoapps.autoformatedittext.AutoFormatEditText
+                    android:id="@+id/prix_vente_produit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Prix de vente"
+                    android:inputType="number"
+                    android:textColor="@color/blanc"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white">
+
+                <com.aldoapps.autoformatedittext.AutoFormatEditText
+                    android:id="@+id/quantite_produit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Quantité"
+                    android:inputType="number"
+                    android:textColor="@color/blanc"
+                    android:textSize="20sp"
+                    app:hintTextColor="@color/blanc" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                app:hintTextColor="@color/blanc">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Péremption:AAAA-MM-JJ"
+                    android:textColor="@color/blanc"
+                    android:textSize="20sp"
+                    android:inputType=""/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/annuler"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/annuler"
+                    android:textColor="#ff0000"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/effectuer"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/effectuer"
+                    android:textColor="#047505"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

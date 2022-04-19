@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="controller.Ajout_client">
+
+    <include
+        android:id="@+id/toolbar_ajoutclient"
+        layout="@layout/toolbar" />
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerlayout_ajout_client"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:headerLayout="@layout/header_nav"
+            app:menu="@menu/main_menu"
+            android:layout_gravity="start"
+            android:id="@+id/navigation_view"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp"
+            android:background="@color/orangeclair">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                app:hintTextColor="@color/blanc">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:inputType="textPersonName"
+                    android:id="@+id/nom_ajout_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Nom"
+                    android:textColor="@color/blanc"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                app:hintTextColor="@color/blanc">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:inputType="textPersonName"
+                    android:id="@+id/prenom_ajout_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Prenom"
+                    android:textColor="@color/blanc"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                app:hintTextColor="@color/blanc">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:inputType="number"
+                    android:id="@+id/tel_ajout_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Téléphone"
+                    android:textColor="@color/blanc"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                app:hintTextColor="@color/blanc">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:inputType="textEmailAddress"
+                    android:id="@+id/mail_ajout_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Adresse mail"
+                    android:textColor="@color/blanc"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white"
+                app:hintTextColor="@color/blanc">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/adresses_ajout_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Adresse"
+                    android:textColor="@color/blanc"
+                    android:textSize="16sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/annuler_client"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/annuler"
+                    android:textColor="#ff0000"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/effectuer_"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/effectuer"
+                    android:textColor="#047505"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
